@@ -6,7 +6,7 @@ st.write("Jawab pertanyaan berikut untuk mengetahui kepribadianmu (Pendiam, Pema
 
 # --- Gambar Logo (opsional, bisa diganti dengan file logo.png di foldermu) ---
 st.image(
-    "https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.png",
+    "memesenyum.gif",
     caption="Mini Quiz App",
     width=200
 )
