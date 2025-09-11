@@ -1,12 +1,12 @@
 import streamlit as st
 
 # Judul & Deskripsi Aplikasi
-st.title("🔮 Mini Quiz Profesi / Kepribadian")
+st.title("🔮 Mini Quiz Tebak Kepribadian")
 st.write("Jawab pertanyaan berikut untuk mengetahui kepribadianmu (Pendiam, Pemarah, Pemalu, atau Netral).")
 
 # --- Gambar Logo (opsional, bisa diganti dengan file logo.png di foldermu) ---
 st.image(
-    "memesenyum.gif",
+    "berfikir.png",
     caption="Mini Quiz App",
     width=200
 )
@@ -50,16 +50,16 @@ if st.button("🔎 Lihat Hasil"):
     st.subheader("📊 Hasil Kuis")
     if result == "pendiam":
         st.success("Kamu cenderung **Pendiam** 🧘‍♂️. Lebih suka tenang, mengamati, dan menjaga diri.")
-        st.image("https://cdn-icons-png.flaticon.com/512/616/616408.png", width=150)
+        st.image("pendiam.png", width=150)
     elif result == "pemarah":
         st.error("Kamu cenderung **Pemarah** 😡. Cepat bereaksi & emosional.")
-        st.image("https://cdn-icons-png.flaticon.com/512/742/742751.png", width=150)
+        st.image("pemarah.png", width=150)
     elif result == "pemalu":
         st.warning("Kamu cenderung **Pemalu** 🙈. Sering gugup dan lebih nyaman di belakang layar.")
-        st.image("https://cdn-icons-png.flaticon.com/512/616/616489.png", width=150)
+        st.image("malu.png", width=150)
     else:
         st.info("Kamu cenderung **Netral** 🙂. Santai, fleksibel, dan mudah beradaptasi.")
-        st.image("https://cdn-icons-png.flaticon.com/512/616/616408.png", width=150)
+        st.image("netral.png", width=150)
 
     # Menampilkan skor detail
     st.write("### 📌 Skor Detail:")
